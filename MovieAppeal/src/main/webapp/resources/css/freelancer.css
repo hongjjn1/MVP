@@ -97,8 +97,8 @@ section h2 {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
   font-weight: 700;
   font-family: 'Montserrat';
 }
@@ -135,11 +135,8 @@ section h2 {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
-    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
-    transition: padding-top 0.3s, padding-bottom 0.3s;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   #mainNav .navbar-brand {
     font-size: 2em;

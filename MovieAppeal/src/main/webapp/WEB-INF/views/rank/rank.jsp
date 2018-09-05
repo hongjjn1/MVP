@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MovieAppeal</title>
+    <title>MovieRank</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="rank.do/">Rank</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Rank</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Recommend</a>
@@ -74,31 +74,17 @@
           
     </header>
     <div style="margin-top:100px; margin-left:100px;">
-    <h1>RANKING TOP 10</h1>
+    <h1>RANKING </h1>
     </div>
-    <div class="container">
-
-      <div class="row text-center text-lg-left">
-
-		<img src="img/g.png" width="50" height="70"/>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-          <a href="#" class="d-block mb-4 h-50">
-            <img class="img-fluid img-thumbnail" src="img/rank1.jpg" width="300" height="700" alt="">
-          </a>
-        </div>
-        <img src="img/u.png" width="50" height="70"/>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-          <a href="#" class="d-block mb-4 h-50">
-            <img class="img-fluid img-thumbnail" src="img/rank2.jpg" width="300" height="700" alt="">
-          </a>
-        </div>
-        <img src="img/d.png" width="50" height="70"/>
-        <div class="col-lg-3 col-md-4 col-xs-4">
-          <a href="#" class="d-block mb-4 h-50">
-            <img class="img-fluid img-thumbnail" src="img/rank3.jpg" width="300" height="700" alt="">
-          </a>
-        </div>
-        </div>
+    <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">대분류
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">대분류1</a></li>
+    <li><a href="#">대분류2</a></li>
+    <li><a href="#">대분류3</a></li>
+  </ul>
+</div>
      <!-- Project One -->
       <div class="row" style="margin-left:35px">
         <div class="col-md-3" >
