@@ -1,10 +1,8 @@
-package net.mvp.main;
+package net.mvp.recommend;
 
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
-
-import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,16 +14,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class MainController {
+public class RecommendController<RecommendDAO> {
 	
-	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
+	private static final Logger logger = LoggerFactory.getLogger(RecommendController.class);
 	
-	@RequestMapping(value = "/main.do", method = RequestMethod.GET)
-	public ModelAndView main() {
+	@RequestMapping(value = "/recommend.do", method = RequestMethod.GET)
+	public ModelAndView movie() {
 		ModelAndView mav = new ModelAndView();
-		mav.addObject("page", "main");
+		mav.addObject("page", "recommend");
 		mav.setViewName("mainLayout");
 		return mav;
-		
 	}
+	
 }

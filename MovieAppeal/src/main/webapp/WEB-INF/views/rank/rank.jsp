@@ -6,41 +6,84 @@
 <html lang="en">
 
   <head>
-
+	
+	<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MovieRank</title>
-
+    <title>MVP TOP</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,600,400italic,600italic" rel="stylesheet" type="text/css">
     <!-- Plugin CSS -->
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
      <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <!-- Button Group -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+	#ranklist{
+	margin-left: 5rem;
+}
+#ranklist {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 40%;
+}
 
+#ranklist td, #ranklist th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#ranklist tr:nth-child(even){background-color: #f2f2f2;}
+
+#ranklist tr:hover {
+background-color: #ddd;
+ -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);   
+    -o-transform:scale(1.2);
+    transform:scale(1.2);
+
+}
+#ranklist th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:#6c757d;
+    color: white;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+	</style>
   </head>
 
   <body id="page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-         <img src="img/MVP.jpg" width="135" height="70" /></a>
+        <a class="navbar-brand js-scroll-trigger" href="main.do">
+         <img src="img/MVP.jpg" width="135" height="75" /></a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -74,207 +117,138 @@
           
     </header>
     <div style="margin-top:100px; margin-left:100px;">
-    <h1>RANKING </h1>
+    <h1 style="margin-left:10px;">영화 랭킹 &nbsp;&nbsp;&nbsp; 
+	    <div class="btn-group">
+	    <button type="button" class="btn btn-primary">조회순</button>
+	    <button type="button" class="btn btn-primary">평점순</button>
+    </div></h1>
     </div>
-    <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">대분류
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">대분류1</a></li>
-    <li><a href="#">대분류2</a></li>
-    <li><a href="#">대분류3</a></li>
-  </ul>
-</div>
-     <!-- Project One -->
-      <div class="row" style="margin-left:35px">
-        <div class="col-md-3" >
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/rank4.jpg" width="150"height="50"  alt="">
-          </a>
-        </div>
-        <div class="col-md-9">
-          <h3>신과함께</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-          <a class="btn btn-primary" href="#">리뷰보기</a>
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <hr>
-
-      <!-- Project Two -->
-      <div class="row" style="margin-left:35px">
-        <div class="col-md-3">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/rank5.jpg" width="150"height="50"  alt="">
-          </a>
-        </div>
-        <div class="col-md-7">
-          <h3>맘마미아!2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-          <a class="btn btn-primary" href="#">리뷰보기</a>
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <hr>
-
-      <!-- Project Three -->
-      <div class="row" style="margin-left:35px">
-        <div class="col-md-3">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/rank6.jpg" width="150"height="50"  alt="">
-          </a>
-        </div>
-        <div class="col-md-7">
-          <h3>공작</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-          <a class="btn btn-primary" href="#">리뷰보기</a>
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <hr>
-
-      <!-- Project Four -->
-      <div class="row" style="margin-left:35px">
-
-        <div class="col-md-3">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/rank7.jpg" width="150"height="50"  alt="">
-          </a>
-        </div>
-        <div class="col-md-7">
-          <h3>목격자</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-          <a class="btn btn-primary" href="#">리뷰보기</a>
-        </div>
-      </div>
+    
+    <table id="ranklist">
+    	<thead>
+	    <tr id="thead">
+	      <th>        </th>
+	      <th>순위.제목</th>
+	      <th align="center">내용</th>
+	      <th colspan="2">평점 </th>
+	      <th>좋아요</th>
+	    </tr>
+	    </thead>
+	    
+	    <tbody id="flip">
+	     <tr>
+	      <td ><img src="img/rank1.jpg" width="75"height="114"></td>
+	      <td>1.서치</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td>9.7</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      <div id="panel">Hello world!</div>
+	      
+	      
+	     <tr>
+	      <td ><img src="img/rank2.jpg" width="75"height="114"></td>
+	      <td>2.너의 결혼식</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td>9.6</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      
+	      
+	     <tr>
+	      <td ><img src="img/rank3.jpg" width="75"height="114"></td>
+	      <td>3.상류사회</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td>9.33</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      
+	      
+	     <tr>
+	      <td ><img src="img/rank4.jpg" width="75"height="114"></td>
+	      <td>4.신과함께</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td>9.2</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      
+	      
+	     <tr>
+	      <td ><img src="img/rank5.jpg" width="75"height="114"></td>
+	      <td>5.맘마미아2</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td><9.12</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      
+	      
+	     <tr>
+	      <td ><img src="img/rank6.jpg" width="75"height="114"></td>
+	      <td>6.공작</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td>8.7</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      
+	      
+	     <tr>
+	      <td ><img src="img/rank7.jpg" width="75"height="114"></td>
+	      <td>7.목격자</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td>8.65</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      
+	      
+	     <tr>
+	      <td ><img src="img/rank8.jpg" width="75"height="114"></td>
+	      <td>8.미션 임파서블</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td>8.6</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      
+	      
+	     <tr>
+	      <td ><img src="img/rank9.jpg" width="75"height="114"></td>
+	      <td>9.휘트니</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td>8.56</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      
+	      
+	     <tr>
+	      <td ><img src="img/rank10.jpg" width="75"height="114"></td>
+	      <td>10.카메라를 멈추면 안 돼!</td>
+	      <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut</td>
+	      <td ><a href="#"><img src="img/star.PNG"></a></td>
+	      <td>7.9</td>
+	      <td><a href="#"><img src="img/heart.PNG"></a></td>
+	      </tr>
+	      </tbody>	
+	</table>
+   
+ <p><br>
+     
       
       <hr>
       
-      <!-- Project Four -->
-      <div class="row" style="margin-left:35px">
-
-        <div class="col-md-3">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/rank8.jpg" width="150"height="50"  alt="">
-          </a>
-        </div>
-        <div class="col-md-7">
-          <h3>미션 임파서블</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-          <a class="btn btn-primary" href="#">리뷰보기</a>
-        </div>
-      </div>
       
-      <hr>
-      
-      <!-- Project Four -->
-      <div class="row" style="margin-left:35px">
-
-        <div class="col-md-3">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/rank9.jpg" width="150"height="50"  alt="">
-          </a>
-        </div>
-        <div class="col-md-7">
-          <h3>휘트니</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-          <a class="btn btn-primary" href="#">리뷰보기</a>
-        </div>
-      </div>
-      
-      <hr>
-      
-      <!-- Project Four -->
-      <div class="row" style="margin-left:35px">
-
-        <div class="col-md-3">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/rank10.jpg" width="150"height="50"  alt="">
-          </a>
-        </div>
-        <div class="col-md-7">
-          <h3>카메라를 멈추면 안 돼!</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-          <a class="btn btn-primary" href="#">리뷰보기</a>
-        </div>
-      </div>
       <!-- /.row -->
     
     
     
 
-    <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/cake.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- About Section -->
     <section class="bg-primary text-white mb-0" id="about">
@@ -298,102 +272,7 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Location</h4>
-            <p class="lead mb-0">2215 John Daniel Drive
-              <br>Clark, MO 65243</p>
-          </div>
-          <div class="col-md-4 mb-5 mb-lg-0">
-            <h4 class="text-uppercase mb-4">Around the Web</h4>
-            <ul class="list-inline mb-0">
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-google-plus"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-dribbble"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-uppercase mb-4">About Freelancer</h4>
-            <p class="lead mb-0">Freelance is a free to use, open source Bootstrap theme created by
-              <a href="http://startbootstrap.com">vip</a>.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    
 
     <div class="copyright py-4 text-center text-white">
       <div class="container">
@@ -408,154 +287,12 @@
       </a>
     </div>
 
-    <!-- Portfolio Modals -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
 
   </body>
 
