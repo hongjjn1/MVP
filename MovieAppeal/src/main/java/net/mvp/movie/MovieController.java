@@ -20,7 +20,7 @@ public class MovieController {
          
          if(keyword !=null)
          {
-             mav.addObject("list",service.searchBook(keyword,10,1));
+             mav.addObject("movie",service.searchBook(keyword,10,1));
          }
          mav.setViewName("movie");
          return mav;

@@ -12,13 +12,13 @@
     <h1>API테스트 화면</h1>
     </div>
        
-    <center>
+    <center>  
             <input type="text" name="keyword" >
             <input type="submit" value="검색">
     </center>
        		<tr>
             <td colspan="7" width="100%" bgcolor="pink"></td>
-             <c:forEach items="${list}" var ="m">
+             <c:forEach items="${movie}" var ="m">
             <tr>
                 <td rowspan="2"><img src="${m.image}">머라도 나와야지~~~~</td>
                 <td rowspan="4" width="800">"${m.title}"</td>
