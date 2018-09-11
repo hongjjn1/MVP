@@ -19,7 +19,7 @@ public class RecommendController<RecommendDAO> {
 	private static final Logger logger = LoggerFactory.getLogger(RecommendController.class);
 	
 	@RequestMapping(value = "/recommend.do", method = RequestMethod.GET)
-	public ModelAndView movie() {
+	public ModelAndView Recommend() {
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("page", "recommend");
 		mav.setViewName("mainLayout");

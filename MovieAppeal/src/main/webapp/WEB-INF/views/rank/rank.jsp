@@ -18,26 +18,7 @@ $(document).ready(function(){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>MVP TOP</title>
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,600,400italic,600italic" rel="stylesheet" type="text/css">
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
-    <!-- Button Group -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style>
+		<style>
 	#ranklist{
 	margin-left: 5rem;
 }
@@ -76,47 +57,13 @@ background-color: #ddd;
     display: none;
 }
 	</style>
+    <title>MVP TOP</title>
+   
+
   </head>
 
   <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="main.do">
-         <img src="img/MVP.jpg" width="135" height="75" /></a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Rank</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Recommend</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Review</a>
-            </li>
-          </ul>
-          
-        </div>
-      </div>
-    </nav>
-
-    <Header> 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          
-    </header>
-    <div style="margin-top:100px; margin-left:100px;">
+    <div id="top-page">
     <h1 style="margin-left:10px;">영화 랭킹 &nbsp;&nbsp;&nbsp; 
 	    <div class="btn-group">
 	    <button type="button" class="btn btn-primary">조회순</button>
@@ -144,7 +91,6 @@ background-color: #ddd;
 	      <td>9.7</td>
 	      <td><a href="#"><img src="img/heart.PNG"></a></td>
 	      </tr>
-	      <div id="panel">Hello world!</div>
 	      
 	      
 	     <tr>
@@ -271,28 +217,6 @@ background-color: #ddd;
         </div>
       </div>
     </section>
-
-    
-
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Copyright &copy; Your Website 2018</small>
-      </div>
-    </div>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
-    </div>
-
-    
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 
   </body>
 

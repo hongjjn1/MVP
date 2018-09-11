@@ -21,11 +21,12 @@ public class MainController {
 	private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 	
 	@RequestMapping(value = "/main.do", method = RequestMethod.GET)
-	public ModelAndView main() {
+	public ModelAndView Main() {
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("page", "main");
 		mav.setViewName("mainLayout");
 		return mav;
 		
 	}
+	
 }

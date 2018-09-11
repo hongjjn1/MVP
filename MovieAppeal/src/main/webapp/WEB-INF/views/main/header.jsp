@@ -12,7 +12,7 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
   </head>
-  <body id="page-top">
+  <body id="#page-top">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
@@ -25,28 +25,28 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="rank.do">Rank</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="rank.do"><i class="fas fa-flag" color="gold"></i>Rank</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Recommend</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="recommend.do"><i class="fas fa-thumbs-up"></i>Recommend</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Review</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="review.do"><i class="fas fa-pen"></i>Review</a>
             </li>
           </ul>
           
         </div>
       </div>
-    </nav>
-
-    <Header> 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
+		<div class="login">
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><i class="fas fa-user">Login</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">login</a></li>
+      <li><a href="#">join</a></li>
+    </ul>
+  </div>
+</div>
+		</nav>
   </body>
 </html>

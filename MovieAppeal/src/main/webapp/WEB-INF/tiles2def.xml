@@ -17,4 +17,8 @@
 	<!-- rank -->
 	<definition name="rank" template="/WEB-INF/views/rank/rank.jsp"/>
 	
+	<definition name="movie" template="/WEB-INF/views/movie/movie.jsp"/>
+	<!-- recommend -->
+	<definition name="recommend" template="/WEB-INF/views/recommend/recommend.jsp"/>
+	
 </tiles-definitions>

@@ -20,7 +20,7 @@ public class RankController {
 	private static final Logger logger = LoggerFactory.getLogger(RankController.class);
 	
 	@RequestMapping(value = "/rank.do", method = RequestMethod.GET)
-	public ModelAndView movie() {
+	public ModelAndView Rank() {
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("page", "rank");
 		mav.setViewName("mainLayout");

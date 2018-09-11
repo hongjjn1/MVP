@@ -231,8 +231,19 @@
 	      <groupId>org.apache.tiles</groupId>
 	      <artifactId>tiles-servlet</artifactId>
 	      <version>2.2.2</version>
-	    </dependency>        
+	    </dependency>     
+	    <!-- xmlpullpaser 네이버API -->
+	    <dependency>
+            <groupId>net.sf.sociaal</groupId>
+            <artifactId>xmlpull-xpp3</artifactId>
+            <version>3.0.0.20130526</version>
+        </dependency>   
+       
+
 	</dependencies>
+	
+	
+		
     <build>
         <plugins>
             <plugin>
@@ -252,10 +263,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
+                <version>3.3</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <compilerArgument>-Xlint:all</compilerArgument>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
@@ -284,4 +295,7 @@
 			<url>http://maven.jahia.org/maven2</url>
     	</repository>
     </repositories>
+    
+
+
 </project>

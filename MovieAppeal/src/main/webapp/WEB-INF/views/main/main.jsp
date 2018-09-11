@@ -11,44 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+	
     <title>MovieAppeal</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
+    
   </head>
 
   <body id="page-top">
-    <jsp:include page="header.jsp" flush="false"/>
-
-    <Header> 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          
-    </header>
     <div style="margin-top:100px; margin-left:100px;">
     <h1>RANKING TOP 10</h1>
     </div>
@@ -337,23 +306,7 @@
       </div>
     </section>
 
-    <jsp:include page="footer.jsp" flush="false"/>
-
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Copyright &copy; Your Website 2018</small>
-      </div>
-    </div>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-to-top d-lg-none position-fixed ">
-      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
-    </div>
-
     <!-- Portfolio Modals -->
-
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
       <div class="portfolio-modal-dialog bg-white">
@@ -485,21 +438,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
 
   </body>
 

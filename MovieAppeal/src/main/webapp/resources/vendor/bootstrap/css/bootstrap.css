@@ -19,7 +19,7 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   --primary: #007bff;
-  --secondary: #6c757d;
+  --secondary: #000000;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -4764,7 +4764,7 @@ input[type="button"].btn-block {
 
 .badge-secondary {
   color: #fff;
-  background-color: #6c757d;
+  background-color: #000000;
 }
 
 .badge-secondary[href]:hover, .badge-secondary[href]:focus {
@@ -6034,7 +6034,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #6c757d !important;
+  background-color: #000000 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
@@ -6156,7 +6156,7 @@ button.bg-dark:focus {
 }
 
 .border-secondary {
-  border-color: #6c757d !important;
+  border-color: #000000 !important;
 }
 
 .border-success {
